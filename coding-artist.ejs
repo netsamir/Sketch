@@ -5,13 +5,18 @@
 <div id="app">
   <h1 v-on:mouseover="MOana" class='message'> {{ message }} </h1>
   <h1 class='message'> {{ clicks }} </h1>
+
+  <form>
+    <input type="text" />
+  </form>
+
   <!-- Begin Earth Drawing -->
   <div class="box">
     <div class="earth">
       <div class="earth-copy">
-        <!-- <div v-bind:style="styleSpot1" class="spot-1">
-        </div>-->
-        <div class="spot-2">
+        <div v-on:click="colorMe(2)" v-bind:style="styleSpot1" class="spot-1">
+        </div>
+        <div v-bind:id="controlId" class="spot-2">
         </div>
         <div class="spot-3">
         </div>
