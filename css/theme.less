@@ -11,11 +11,11 @@
 This stylesheet is a starting place. Include your own Base, Layout
 Modules, and State styles below.
 
-This style sheet organization is based on the SMACCS system. 
+This style sheet organization is based on the SMACCS system.
 Please visit the following website for more info: http://smacss.com/
 */
 
-// Load LESS Library 
+// Load LESS Library
 @import "components/_variables";
 
 /****************************
@@ -28,166 +28,101 @@ All base HTML tags that require styling
 /////////////////////////////
 ****************************/
 
-body {
-  background: @primary-background;
-  font-family: @body-copy;
-  font-size: @base-font-size;
-  line-height: @base-line-height;
-  color: @primary-text; 
+html,body{
+  height: 100%;
+  background: @background;
 }
 
-ul,
-ol {
-
+.message{
+  margin-top: 8%;
+  color: @white;
+  text-align: @center;
+  font-weight: @thick;
+  font-size: @large;
+  font-family: @primaryFont;
 }
 
-li {
-
+.box{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 1%;
+  width: 600px;
+  height: 420px;
+  background: @clear;
 }
 
-a, a:link, a:visited {
-
+.earth{
+  position: absolute;
+  width: 50%;
+  height: 67%;
+  background: @primary;
+  border-radius: @circle;
+  top:15%;
+  left: 25%;
 }
 
-a:hover {
-
+.earth-copy{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: @primary;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-p {
-
-
+.spot-1{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 10%;
+  height: 10%;
+  background: @accent;
+  border-radius: @circle;
+  z-index: 2;
 }
 
-hr {
-
+.spot-2{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 15%;
+  height: 15%;
+  background: @accent;
+  border-radius: @circle;
+  z-index: 2;
 }
 
-/***************************
-////////////////////////////
-
-02. LAYOUT
-
-Styles specific to your layout or website
-
-////////////////////////////
-***************************/
-
-.header {
-	
+.spot-3{
+  position: absolute;
+  top: 30%;
+  right: 25%;
+  width: 15%;
+  height: 15%;
+  background: @accent;
+  border-radius: @circle;
+  z-index: 2;
 }
 
-.footer {
-	margin-top: (@padding * 6);
-	padding-bottom: (@padding * 12);
-	padding-top: @padding;
-	border-top: @border-size @border-color @border-type;
-	color: @light-text;
+.spot-4{
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  width: 10%;
+  height: 10%;
+  background: @accent;
+  border-radius: @circle;
+  z-index: 2;
 }
 
-/***************************
-////////////////////////////
+.spot-5{
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
+  width: 25%;
+  height: 25%;
+  background: @accent;
+  border-radius: @circle;
+  z-index: 2;
+}
 
-03. MODULES
-
-Reusable classes or components
-
-////////////////////////////
-***************************/
-
-@import "components/_colors.less";
-
-
-/*
-
-Potential modules you could replace...
-
-badges
-
-breadcrumb
-
-buttons
-
-button groups
-
-button dropdowns 
-
-carousel
-
-code 
-
-collapse
-
-colors
-
-dropdown
-
-forms
-
-icons
-
-input groups 
-
-images
-
-helpers
-
-jumbotron
-
-labels
-
-list group
-
-media object
-
-modal
-
-navs
-
-navbar
-
-pager
-
-page header
-
-pagination
-
-panels
-
-pills
-
-popover
-
-progress bars
-
-scrollspy
-
-tables
-
-tabs
-
-thumbnails
-
-tooltip
-
-typography
-
-well
-
-
-/***************************
-////////////////////////////
-
-04. STATES
-
-////////////////////////////
-***************************/
-
-/* 
-
-Potential states you could replace...
-
-alerts
-
-form validation
-
-*/
