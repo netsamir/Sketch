@@ -1,0 +1,14 @@
+{
+ "index": {
+  "pageTitle": "Home"
+ },
+ "style-guide": {
+  "pageTitle": "Style Guide"
+ },
+ "coding-artist": {
+  "pageTitle": "Artiste Coding Course"
+ },
+ "README": {
+  "pageTitle": "readme"
+ }
+}

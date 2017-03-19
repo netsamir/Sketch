@@ -1,0 +1,66 @@
+body {
+ background-color: #ECDCDE;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-top: 100px;
+}
+.box {
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+}
+.text {
+  background-color: #989593;
+  color: #FEFEFE;
+  font-size: 52px;
+  font-family: Ubuntu;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 40px;
+  letter-spacing: 3px;
+  border-radius: 0 0 0 10px;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  cursor: crosshair;
+  background: radial-gradient(circle at 0px 0px, #fff, #000);
+}
+.shadow {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+.point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+  background-color: yellow;
+}
+/*
+.circle .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+*/
+  

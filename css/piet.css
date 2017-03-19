@@ -1,0 +1,240 @@
+body {
+/*css for full size background image*/
+  background: url('../img/OLIESS0.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+h1 {
+  margin: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 32px;
+}
+
+.frame {
+  position: relative;
+  margin: auto;
+  width: 338px;
+  height: 403px;
+  background-color: white;
+}
+.border {
+  position: absolute;
+  width: 316px;
+  height: 383px;
+  top: 11px;
+  left: 11px;
+  background-color: black;
+}
+.border-active {
+  position: absolute;
+  width: 316px;
+  height: 383px;
+  top: 11px;
+  left: 11px;
+  background-color: black;
+  animation: fade-border 3s infinite;
+}
+.red {
+  position: absolute;
+  width: 221px;
+  height: 260px;
+  top: 11px;
+  right:11px;
+  background-color: red;
+}
+.red-active {
+  position: absolute;
+  width: 221px;
+  height: 260px;
+  top: 11px;
+  right:11px;
+  background-color: red;
+  animation: fade-red 3s infinite;
+}
+.white_square_up {
+  position: absolute;
+  width: 63px;
+  height: 68px;
+  top: 11px;
+  left: 11px;
+  background-color: white;
+}
+.white_1 {
+  position: absolute;
+  width: 63px;
+  height: 68px;
+  top: 11px;
+  left: 11px;
+  background-color: white;
+  animation: fade-white1 3s infinite;
+}
+.white_rec_mid {
+  position: absolute;
+  width: 63px;
+  height: 177px;
+  top: 94px;
+  left: 11px;
+  background-color: white;
+}
+.white_2 {
+  position: absolute;
+  width: 63px;
+  height: 177px;
+  top: 94px;
+  left: 11px;
+  background-color: white;
+  animation: fade-white2 3s infinite;
+}
+.blue {
+  position: absolute;
+  width: 63px;
+  height: 91px;
+  top: 282px;
+  left: 11px;
+  background-color: blue;
+}
+.blue-active {
+  position: absolute;
+  width: 63px;
+  height: 91px;
+  top: 282px;
+  left: 11px;
+  background-color: blue;
+  animation: fade-blue 3s infinite;
+}
+.white_mid_down {
+  position: absolute;
+  width: 170px;
+  height: 91px;
+  top: 282px;
+  left: 85px;
+  background-color: white;
+}
+.white_3 {
+  position: absolute;
+  width: 170px;
+  height: 91px;
+  top: 282px;
+  left: 85px;
+  background-color: white;
+  animation: fade-white3 3s infinite;
+}
+.white_right_down {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 282px;
+  right: 11px;
+  background-color: white;
+  }
+.white_4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 282px;
+  right: 11px;
+  background-color: white;
+  animation: fade-white4 3s infinite;
+  }
+.yellow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 11px;
+  right: 11px;
+  background-color: yellow;
+  }
+.yellow-active {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 11px;
+  right: 11px;
+  background-color: yellow;
+  animation: fade-yellow 3s infinite;
+  }
+
+@keyframes fade-red {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: #FF6464;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes fade-blue {
+  0% {
+    background-color: blue;
+   }
+  50% {
+    background-color: #4949FC;
+  }
+  100% {
+    background-color: blue;
+   }
+}
+
+@keyframes fade-yellow {
+  0% {
+    background-color: yellow;
+   }
+  50% {
+    background-color: #FFFF64;
+  }
+  100% {
+    background-color: yellow;
+   }
+}
+
+@keyframes fade-white1 {
+  0% {
+    background-color: white;
+   }
+  50% {
+    background-color: #0F991C;
+  }
+  100% {
+    background-color: white;
+   }
+}
+
+@keyframes fade-white2 {
+  0% {
+    background-color: white;
+   }
+  50% {
+    background-color: #F613A3;
+  }
+  100% {
+    background-color: white;
+   }
+}
+@keyframes fade-white3 {
+  0% {
+    background-color: white;
+   }
+  50% {
+    background-color: #99582A;
+  }
+  100% {
+    background-color: white;
+   }
+}
+@keyframes fade-white4 {
+  0% {
+    background-color: white;
+   }
+  50% {
+    background-color: #587792;
+  }
+  100% {
+    background-color: white;
+   }
+}
