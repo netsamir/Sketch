@@ -5,9 +5,10 @@
 <div id="app">
   <h1 v-on:mouseover="MOana" class='message'> {{ message }} </h1>
   <h1 class='message'> {{ clicks }} </h1>
+  <h1 class='message'> {{ inputText }} </h1>
 
   <form>
-    <input type="text" />
+    <input v-model="inputText" type="text" class="form-control" placeholder="Anything" />
   </form>
 
   <!-- Begin Earth Drawing -->

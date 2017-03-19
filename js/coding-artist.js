@@ -2,6 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Oana mon amoureuse',
+    inputText: '',
     clicks: 0,
     styleSpot1: {
       background: "white"
