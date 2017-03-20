@@ -17,11 +17,15 @@ var app = new Vue({
       this.clicks++;
     }, // end of oana
     updateMessage: function(){
+      this.inputText = this.inputText.toLowerCase()
+
       if (this.inputText === this.key){
         this.result = "You Win"
       }
-      else {
-        this.result = "You loose"
+      else if (this.inputText === ''){
+        this.result = "Try it"
+      } else {
+        this.result = 'Nope'
       }
     }, // end of updateMessage
     colorMe: function(value){
