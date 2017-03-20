@@ -1,24 +1,25 @@
+<div id="app">
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-12">
 
-<div id="app">
   <h1 v-on:mouseover="MOana" class='message'> {{ message }} </h1>
   <h1 class='message'> {{ clicks }} </h1>
+
   <div class="row">
     <div class="col-lg-6">
       <h1 class='message'> {{ inputText }} </h1>
-    <form>
-      <input v-on:keyup="updateMessage" v-model="inputText" type="text" class="form-control" placeholder="Anything" />
-    </form>
-    <!-- end of col lg 6 -->
-    </div>
+      <form>
+        <input v-on:keyup="updateMessage" v-model="inputText" type="text" class="form-control" placeholder="Anything" />
+      </form>
+    </div> <!-- end of col lg 6 -->
 
     <div class="col-lg-6">
 
-    <!-- end of col lg 6 -->
-    </div>
-  </div>
+    </div> <!-- end of col lg 6 -->
+
+  </div> <!-- end of row -->
+
   <h1 class='message'> {{ result }} </h1>
 
 
@@ -39,8 +40,8 @@
       </div>
     </div>
   </div>
-</div>
 
     </div>
   </div>
- </div>
+ </div> <!-- end of container-fluid -->
+</div> <!-- end of id app -->
