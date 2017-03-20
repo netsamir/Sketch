@@ -5,12 +5,22 @@
 <div id="app">
   <h1 v-on:mouseover="MOana" class='message'> {{ message }} </h1>
   <h1 class='message'> {{ clicks }} </h1>
-  <h1 class='message'> {{ inputText }} </h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class='message'> {{ inputText }} </h1>
+    <form>
+      <input v-on:keyup="updateMessage" v-model="inputText" type="text" class="form-control" placeholder="Anything" />
+    </form>
+    <!-- end of col lg 6 -->
+    </div>
+
+    <div class="col-lg-6">
+
+    <!-- end of col lg 6 -->
+    </div>
+  </div>
   <h1 class='message'> {{ result }} </h1>
 
-  <form>
-    <input v-on:keyup="updateMessage" v-model="inputText" type="text" class="form-control" placeholder="Anything" />
-  </form>
 
   <!-- Begin Earth Drawing -->
   <div class="box">
