@@ -3,6 +3,8 @@ var app = new Vue({
   data: {
     message: 'Hello Oana mon amoureuse',
     inputText: '',
+    inputCheckbox: '',
+    checkboxMessage: '',
     key: 'vue',
     result: 'Try it',
     clicks: 0,
@@ -16,6 +18,14 @@ var app = new Vue({
       this.message = 'I love you';
       this.clicks++;
     }, // end of oana
+   updateCheckbox: function(){
+      if (this.inputCheckbox){
+       this.checkboxMessage = "The value is true"
+      } else {
+       this.checkboxMessage = "The value is false"
+      }
+
+    }, // end of updateCheckbox
     updateMessage: function(){
       this.inputText = this.inputText.toLowerCase()
 
