@@ -1,101 +1,52 @@
-@import "components/_variables"
+/*!
+ * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
-body
-  height: 100%
-  background: $background
+// Core variables and mixins
 
-.message
-  margin-top: 8%
-  color: $primary
-  text-align: $center
-  font-weight: $thick
-  font-size: $large
-  font-family: $primaryFont
+@import bootstrap/custom
+@import bootstrap/variables
+@import bootstrap/mixins
 
-.box
-  position: relative
-  margin: auto
-  display: block
-  margin-top: 1%
-  width: 600px
-  height: 420px
-  background: $clear
+@import bootstrap/print
 
+// Core CSS
+@import bootstrap/reboot
+@import bootstrap/type
+@import bootstrap/images
+@import bootstrap/code
+@import bootstrap/grid
+@import bootstrap/tables
+@import bootstrap/forms
+@import bootstrap/buttons
 
-.earth
-  position: absolute
-  width: 50%
-  height: 67%
-  background: $primary
-  border-radius: $circle
-  top: 15%
-  left: 25%
+// Components
+@import bootstrap/transitions
+@import bootstrap/dropdown
+@import bootstrap/button-group
+@import bootstrap/input-group
+@import bootstrap/custom-forms
+@import bootstrap/nav
+@import bootstrap/navbar
+@import bootstrap/card
+@import bootstrap/breadcrumb
+@import bootstrap/pagination
+@import bootstrap/badge
+@import bootstrap/jumbotron
+@import bootstrap/alert
+@import bootstrap/progress
+@import bootstrap/media
+@import bootstrap/list-group
+@import bootstrap/responsive-embed
+@import bootstrap/close
 
-.earth-copy
-  width: 100%
-  height: 100%
-  position: absolute
-  background: $primary
-  border-radius: 50%
-  z-index: 1
+// Components w/ JavaScript
+@import bootstrap/modal
+@import bootstrap/tooltip
+@import bootstrap/popover
+@import bootstrap/carousel
 
-.spot-1
-  position: absolute
-  top: 20%
-  left: 20%
-  width: 10%
-  height: 10%
-  background: $accent
-  border-radius: $circle
-  z-index: 2
-
-.spot-2
-  position: absolute
-  top: 40%
-  left: 30%
-  width: 15%
-  height: 15%
-  background: $accent
-  border-radius: $circle
-  z-index: 2
-
-.spot-3
-  position: absolute
-  top: 30%
-  right: 25%
-  width: 15%
-  height: 15%
-  background: $accent
-  border-radius: $circle
-  z-index: 2
-
-.spot-4
-  position: absolute
-  bottom: 20%
-  right: 20%
-  width: 10%
-  height: 10%
-  background: $accent
-  border-radius: $circle
-  z-index: 2
-
-.spot-5
-  position: absolute
-  bottom: 10%
-  right: 40%
-  width: 25%
-  height: 25%
-  background: $accent
-  border-radius: $circle
-  z-index: 2
-
-#red
-  background-color: red
-
-#blue
-  background-color: blue
-
-.form-control:focus
-  background-color: #F38D68
-  color: white
-  transition: 2s transform
+// Utility classes
+@import bootstrap/utilities
