@@ -1,10 +1,13 @@
 $background-color: #CDCDCD
 
+body
+  padding-top: 5rem
+
 .clown
   position: relative
   margin: 2px auto
-  width: 400px
-  height: 400px
+  width: 100%
+  height: 10rem
   background-color: $background-color
   border-radius: 5px
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4)
@@ -20,4 +23,67 @@ $background-color: #CDCDCD
   font-weight: normal
   text-align: center
   line-height: 2
+
+dd
+  display: flex
+
+dd > div
+  flex: 1
+
+input
+  height: 30px
+  margin: 5px
+  padding: 3px
+  margin-right: 15px
+  padding-right: 5px
+  padding: 0 3px 0 0
+  transform: translateY(-3px)
+
+.label
+  text-align: right
+  height: 30px
+  margin: 5px
+  padding: 0 3px 0 0
+  margin-right: 15px
+  padding-right: 5px
+
+.percentage
+  position: relative
+  background: transparent
+
+.percentage > span
+  position: absolute
+  background: #3d9970
+  text-align: right
+  height: 30px
+  color: white
+  padding: 3px
+  padding-right: 5px
+  transition: background-color .3s ease
+  cursor: pointer
+
+  &:hover,
+  &:focus
+    background-color: #aaa
+
+.percentage-1
+  width: 4.2% * 3
+
+.percentage-2
+  width: 11.1% * 3
+
+.percentage-3
+  width: 4.3% * 3
+
+.percentage-4
+  width: 4.0% * 3
+
+.percentage-5
+  width: 9.4% * 3
+
+.percentage-6
+  width: 35.1% * 3
+
+.percentage-7
+  width: 31.8% * 3
 
