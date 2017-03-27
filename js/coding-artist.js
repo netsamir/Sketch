@@ -1,7 +1,7 @@
 var app2 = new Vue({
   el: '#app2',
   data: {
-    color1: 'background-color: red;'
+    color: 'red',
   }, // end of data
   methods: {} // end of methods
 }) // end of app2
