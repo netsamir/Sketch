@@ -2,8 +2,13 @@ var app2 = new Vue({
   el: '#app2',
   data: {
     color: 'red',
+    color2: 'silver',
+    color3: 'green',
+    color4: 'black',
+    color5: 'teal',
+    color6: 'purple',
+    color7: 'green',
   }, // end of data
-  methods: {} // end of methods
 }) // end of app2
 
 var app = new Vue({

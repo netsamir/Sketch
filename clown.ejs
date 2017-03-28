@@ -17,52 +17,89 @@
     </svg>
   </div> <!-- end of row SVG test -->
   <h1 class="title">How Often Do Developers Work Remotely?</h1>
-  <div class="row">
   <div id="app2">
-  <div class="col-md-12 graph-result">
-    <dl>
-      <dd>
-      <div class="input">
+    <div class="stats">
+      <div class="color">
         <input type="text"
-          placeholder="#3d9970" /></div>
+          placeholder="#3d9970"
+          v-model="color"
+          /></div>
         <div class="label"> It's complicated</div>
-        <div class="percentage">
-          <span
+        <div class="percentage"><span
             v-bind:style="{'background-color' : color }"
             class="percentage-1">4.2%</span></div>
-      </dd>
-      <dd>
-      <div class="input"><input type="text" placeholder="#3d9970"/></div>
+    </div> <!-- end of stats -->
+    <div class="stats">
+      <div class="color">
+      <input type="text"
+        placeholder="#3d9970"
+        v-model="color2"
+        /></div>
         <div class="label"> All or almost all the time (I'm full-time remote)</div>
-        <div class="percentage"><span class="percentage-2">11.1%</span></div>
-      </dd>
-      <dd>
-      <div class="input"><input type="text" placeholder="#3d9970"/></div>
+        <div class="percentage"><span
+            v-bind:style="{'background-color' : color2 }"
+            class="percentage-2">11.1%</span></div>
+    </div> <!-- end of stats -->
+    <div class="stats">
+      <div class="color">
+      <input type="text"
+        type="text"
+        placeholder="#3d9970"
+        v-model="color3"
+        /></div>
         <div class="label"> More than half, but not all, the time</div>
-        <div class="percentage"><span class="percentage-3">4.3%</span></div>
-      </dd>
-      <dd>
-      <div class="input"><input type="text" placeholder="#3d9970"/></div>
+        <div class="percentage"><span
+            v-bind:style="{'background-color' : color3 }"
+            class="percentage-3">4.3%</span></div>
+    </div> <!-- end of stats -->
+    <div class="stats">
+      <div class="color">
+      <input type="text"
+        placeholder="#3d9970"
+        v-model="color4"
+        /></div>
         <div class="label"> About half the time</div>
-        <div class="percentage"><span class="percentage-4">4.0%</span></div>
-      </dd>
-      <dd>
-      <div class="input"><input type="text" placeholder="#3d9970"/></div>
+        <div class="percentage"><span
+            v-bind:style="{'background-color' : color4 }"
+            class="percentage-4">4.0%</span></div>
+    </div> <!-- end of stats -->
+    <div class="stats">
+      <div class="color">
+      <input type="text"
+        v-model="color5"
+        placeholder="#3d9970"/></div>
         <div class="label"> Less than half the time, but at least one day each week</div>
-        <div class="percentage"><span class="percentage-5">9.4%</span></div>
-      </dd>
-      <dd>
-      <div class="input"><input type="text" placeholder="#3d9970"/></div>
+        <div class="percentage"><span
+            v-bind:style="{'background-color' : color5 }"
+            class="percentage-5">9.4%</span></div>
+    </div> <!-- end of stats -->
+    <div class="stats">
+      <div class="color">
+      <input type="text"
+        v-model="color6"
+        placeholder="#3d9970"/></div>
         <div class="label"> A few days each month</div>
-        <div class="percentage"><span class="percentage-6">35.1%</span></div>
-      </dd>
-      <dd>
-      <div class="input"><input type="text" placeholder="#3d9970"/></div>
+        <div class="percentage"><span
+            v-bind:style="{'background-color' : color6 }"
+            class="percentage-6">35.1%</span></div>
+    </div> <!-- end of stats -->
+    <div class="stats">
+      <div class="color">
+      <input type="text"
+        v-model="color7"
+        placeholder="#3d9970"/></div>
         <div class="label"> Never</div>
-        <div class="percentage"><span class="percentage-7">31.8%</span></div>
-      </dd>
-    </dl>
-    </div> <!-- end of col md 12 -->
+        <div class="percentage"><span
+            v-bind:style="{'background-color' : color7 }"
+            class="percentage-7">31.8%</span></div>
+    </div> <!-- end of stats -->
   </div> <!-- end of app2 -->
-  </div> <!-- end of row Working remote -->
 </div> <!-- end of container -->
+<h1 class="title">Flex test (Outside the container)</h1>
+  <div class="flex-wrapper">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div> <!-- end of stats -->
+</div> <!-- end of row -->
+
