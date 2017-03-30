@@ -8,8 +8,8 @@ var velocity1 = new Vue({
   },
   methods: {
     enter: function(el, done){
-      $.Velocity(el, { opacity: 1, fontSize: '1.4em' }, { duration: 300 })
-      $.Velocity(el, { fontSize: '1em' }, { complete: done })
+      $.Velocity(el, { opacity: 1, fontSize: '60px' }, { duration: 300 })
+      $.Velocity(el, { fontSize: '40px' }, { complete: done })
     }, // end of enter
     leave: function(el, done){
       $.Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 })
