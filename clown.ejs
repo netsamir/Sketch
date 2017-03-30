@@ -165,7 +165,10 @@
     <div v-if="showScene1" id="velocity1">
       <div class="frame">
         <button v-on:click="toggleTitle" class='sambtn'>{{ buttonText }}</button>
-        <transition name="js-hooks">
+        <transition name="js-hooks"
+          v-bind:css="false"
+          v-on:enter="enter"
+          v-on:leave="leave">
           <div v-if="showTitle" class="effect">{{ title }}</div>
         </transition>
     </div> <!-- end of frame -->

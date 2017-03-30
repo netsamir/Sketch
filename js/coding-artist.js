@@ -2,11 +2,27 @@ var velocity1 = new Vue({
   el: '#velocity1',
   data: {
     showScene1: true,
-    title: 'Start menu',
+    title: 'Velocity',
     showTitle: true,
-    buttonText: "Animate"
+    buttonText: "Velocity"
   },
   methods: {
+    enter: function(el, done){
+      $.Velocity(el, { opacity: 1, fontSize: '1.4em' }, { duration: 300 })
+      $.Velocity(el, { fontSize: '1em' }, { complete: done })
+    }, // end of enter
+    leave: function(el, done){
+      $.Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 }
+
+           , { complete: done })
+//      $.Velocity(el, { rotateZ: '100deg' }, { loop: 2 })
+      // $.Velocity(el, {
+      //   rotateZ: '45deg',
+      //   translateY: '30px',
+      //   translateX: '30px',
+      //   opacity: 0
+      // }
+    }, // end of leave
     toggleTitle: function(){
       if (this.showTitle){
         this.showTitle = false;
@@ -14,12 +30,8 @@ var velocity1 = new Vue({
         this.showTitle = true;
       }
     }, // end of toggleTitle
-    startApp: function(){
-      this.showScene1 = false;
-      scene2.showScene2 = true;
-    } // end of startApp
   } // end of methods
-}); // end of Vue scene1
+}); // end of Vue velocity1
 
 var scene1 = new Vue({
   el: '#scene1',
