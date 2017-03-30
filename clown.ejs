@@ -146,7 +146,7 @@
           <div v-if="showTitle" class="effect">{{ title }}</div>
         </transition>
     </div> <!-- end of frame -->
-  </div>
+  </div> <!-- end of id scene1 -->
 </div> <!-- end of new-project -->
 
 <div class="new-project last">
@@ -161,5 +161,14 @@
   <p>
   In this exercice we will use <code>Vue.js</code> and <code>Velocity.js</code>.
   </p>
-</div>
+
+    <div v-if="showScene1" id="velocity1">
+      <div class="frame">
+        <button v-on:click="toggleTitle" class='sambtn'>{{ buttonText }}</button>
+        <transition name="js-hooks">
+          <div v-if="showTitle" class="effect">{{ title }}</div>
+        </transition>
+    </div> <!-- end of frame -->
+  </div> <!-- end of id scene1 -->
+</div> <!-- end of project -->
 </main>

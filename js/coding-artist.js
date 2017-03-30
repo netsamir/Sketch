@@ -1,3 +1,26 @@
+var velocity1 = new Vue({
+  el: '#velocity1',
+  data: {
+    showScene1: true,
+    title: 'Start menu',
+    showTitle: true,
+    buttonText: "Animate"
+  },
+  methods: {
+    toggleTitle: function(){
+      if (this.showTitle){
+        this.showTitle = false;
+      } else {
+        this.showTitle = true;
+      }
+    }, // end of toggleTitle
+    startApp: function(){
+      this.showScene1 = false;
+      scene2.showScene2 = true;
+    } // end of startApp
+  } // end of methods
+}); // end of Vue scene1
+
 var scene1 = new Vue({
   el: '#scene1',
   data: {
