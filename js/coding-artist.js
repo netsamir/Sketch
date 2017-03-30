@@ -1,3 +1,35 @@
+var scene1 = new Vue({
+  el: '#scene1',
+  data: {
+    showScene1: true,
+    title: 'Start menu',
+    showTitle: true,
+    buttonText: "Animate"
+  },
+  methods: {
+    toggleTitle: function(){
+      if (this.showTitle){
+        this.showTitle = false;
+      } else {
+        this.showTitle = true;
+      }
+    }, // end of toggleTitle
+    startApp: function(){
+      this.showScene1 = false;
+      scene2.showScene2 = true;
+    } // end of startApp
+  } // end of methods
+}); // end of Vue scene1
+
+var scene2 = new Vue({
+  el: '#scene2',
+  data: {
+    showScene2: false,
+    message: "Hello World!",
+    clicks: 0
+  }, // end of data
+}); // end of Vue
+
 var app2 = new Vue({
   el: '#app2',
   data: {
