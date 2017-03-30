@@ -12,16 +12,14 @@ var velocity1 = new Vue({
       $.Velocity(el, { fontSize: '1em' }, { complete: done })
     }, // end of enter
     leave: function(el, done){
-      $.Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 }
-
-           , { complete: done })
-//      $.Velocity(el, { rotateZ: '100deg' }, { loop: 2 })
-      // $.Velocity(el, {
-      //   rotateZ: '45deg',
-      //   translateY: '30px',
-      //   translateX: '30px',
-      //   opacity: 0
-      // }
+      $.Velocity(el, { translateX: '15px', rotateZ: '50deg' }, { duration: 600 })
+      $.Velocity(el, { rotateZ: '100deg' }, { loop: 2 })
+      $.Velocity(el, {
+        rotateZ: '45deg',
+        translateY: '30px',
+        translateX: '30px',
+        opacity: 0
+      }, { complete: done })
     }, // end of leave
     toggleTitle: function(){
       if (this.showTitle){
