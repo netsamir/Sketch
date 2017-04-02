@@ -149,13 +149,13 @@ function render(data){
     .attr("width", 1100)
     .attr("height", 400)
     .append('g')
-    .selectAll("rect")
-    .data(data);
 
   // ENTER
-    graphGroup.enter()
+  var barGroup = graphGroup.selectAll('g')
+    .data(data)
+    .enter()
+    .append('g')
     .append('rect')
-    .attr("fill", 'steelblue')
     .attr("transform", translator)
     .attr("width", barWidth)
     .attr("height", function (d) { return d * 100; });
