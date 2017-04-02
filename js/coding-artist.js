@@ -133,7 +133,7 @@ beta = [ 1.36, 1.07, 1.12, 0.88, 0.85, 1.12, 0.86, 0.47, 0.79, 0.91, 1.22, 1.08,
 
 function render(data){
 
-  var barWidth = 15;
+  var barWidth = 40;
   var barPadding = 3;
   var maxValue = d3.max(beta);
 
@@ -142,6 +142,7 @@ function render(data){
   function translator(d, i) {
       return "translate(" + xloc(d, i) + "," + yloc(d) + ")";
     };
+  var textTranslator = "translate(" + barWidth / 2 + ",0)";
 
   // UPDATE
   var graphGroup = d3.select('#beta')
@@ -156,9 +157,14 @@ function render(data){
     .enter()
     .append('g')
     .attr("transform", translator)
-    .append('rect')
+
+    barGroup.append('rect')
     .attr("width", barWidth)
     .attr("height", function (d) { return d * 100; });
+
+    barGroup.append('text')
+    .attr("transform", textTranslator)
+    .text(function (d) { return d ;});
 
   // EXIT
     graphGroup.exit().remove()
