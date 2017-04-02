@@ -136,5 +136,5 @@ d3.select("#beta").selectAll("div")
   .append("div")
   .attr("class", "bar")
   .style("height", function(d) {
-    return d * 10 + "px";
+    return d * 100 + "px";
 });
