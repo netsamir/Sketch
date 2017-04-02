@@ -130,35 +130,38 @@ var app = new Vue({
 //
 //
 beta = [ 1.36, 1.07, 1.12, 0.88, 0.85, 1.12, 0.86, 0.47, 0.79, 0.91, 1.22, 1.08, 1.01, 1.07, 1.12, 1.00, 1.52, 1.20, 1.36, 0.99, 1.06, 1.31, 0.76, 1.40, 1.02, 1.23, 1.14, 1.08, 0.86, 1.18, 1.20, 0.85, 0.92, 0.65, 0.75, 1.20, 0.84, 1.14, 1.04, 0.94, 0.95, 1.08, 1.10, 0.96, 0.80, 0.98, 0.90, 1.03, 0.83, 0.90, 1.06, 1.30, 1.49, 1.08, 1.38, 1.20, 1.37, 0.84, 1.12, 0.54, 1.25, 1.32, 0.72, 0.68, 1.27, 0.99, 0.92, 0.75, 0.77, 0.91, 1.30, 1.10, 1.05, 0.69, 1.23, 1.02, 1.35, 1.20, 1.10, 1.20, 0.85, 0.98, 1.13, 1.13, 1.60, 1.12, 0.99, 1.04, 1.28, 1.01, 0.79, 1.21, 0.38, 0.65]
-var barWidth = 15;
-var barPadding = 3;
-var maxValue = d3.max(beta);
-var graphGroup = d3.select('#beta')
-  .append('svg')
-  .attr("width", 1100)
-  .attr("height", 400)
-  .append('g');
 
-function xloc(d, i) { return i * (barWidth + barPadding); };
-function yloc(d) { return maxValue - d; };
-function translator(d, i) {
-    return "translate(" + xloc(d, i) + "," + yloc(d) + ")";
-   };
+function render(data){
 
-graphGroup.selectAll("rect")
-    .data(beta)
-    .enter()
+  var barWidth = 15;
+  var barPadding = 3;
+  var maxValue = d3.max(beta);
+
+  function xloc(d, i) { return i * (barWidth + barPadding); };
+  function yloc(d) { return maxValue * 100 - d * 100; };
+  function translator(d, i) {
+      return "translate(" + xloc(d, i) + "," + yloc(d) + ")";
+    };
+
+  // UPDATE
+  var graphGroup = d3.select('#beta')
+    .append('svg')
+    .attr("width", 1100)
+    .attr("height", 400)
+    .append('g')
+    .selectAll("rect")
+    .data(data);
+
+  // ENTER
+    graphGroup.enter()
     .append('rect')
     .attr("fill", 'steelblue')
     .attr("transform", translator)
     .attr("width", barWidth)
-    .attr("height", function (d) { return d; });
-//
-// d3.select("#beta").selectAll("svg")
-//   .data(beta)
-//   .enter()
-//   .append("svg")
-//   .attr("class", "bar")
-//   .style("height", function(d) {
-//     return d * 100 + "px";
-// });
+    .attr("height", function (d) { return d * 100; });
+
+  // EXIT
+    graphGroup.exit().remove()
+};
+
+render(beta);
