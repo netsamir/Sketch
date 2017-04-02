@@ -155,8 +155,8 @@ function render(data){
     .data(data)
     .enter()
     .append('g')
-    .append('rect')
     .attr("transform", translator)
+    .append('rect')
     .attr("width", barWidth)
     .attr("height", function (d) { return d * 100; });
 
